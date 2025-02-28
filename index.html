@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Hacer que el body ocupe toda la pantalla */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        /* El contenido principal debe crecer para empujar el footer hacia abajo */
+        .content {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Welcome to TempusGo Tours</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container my-4 content">
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 1">
+                    <div class="card-body">
+                        <p class="card-text">Visit Alhambra, and discover its magic.</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 2">
+                    <div class="card-body">
+                        <p class="card-text">TBD</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 3">
+                    <div class="card-body">
+                        <p class="card-text">TBD</p>
+                        <a href="#" class="btn btn-primary">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer pegado abajo -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; TempusGo Tours 2025. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
