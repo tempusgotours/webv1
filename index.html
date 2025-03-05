@@ -34,11 +34,26 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home" data-lang data-en="Home" data-es="Inicio" data-fr="Accueil" data-it="Home" data-ja="ホーム">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tours" data-lang data-en="Tours" data-es="Tours" data-fr="Circuits" data-it="Tour" data-ja="ツアー">Tours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-lang data-en="About" data-es="Sobre Nosotros" data-fr="À propos" data-it="Chi Siamo" data-ja="私たちについて">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-lang data-en="Contact" data-es="Contacto" data-fr="Contact" data-it="Contatto" data-ja="連絡先">Contact</a></li>
                 </ul>
+
+
+                    <!-- Dropdown de idioma -->
+                <div class="dropdown ms-3">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Language (EN)
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" onclick="switchLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="switchLanguage('es')">Español</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="switchLanguage('fr')">Français</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="switchLanguage('it')">Italiano</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="switchLanguage('ja')">日本語</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -52,8 +67,22 @@
                     <div class="card text-center">
                         <img src="img/img1.png" class="card-img-top" alt="Alhambra">
                         <div class="card-body">
-                            <p class="card-text">Visit the Alhambra and explore the Nasrid Palaces, the stunning Generalife gardens, and the mighty Alcazaba. Step into a world of history, beauty, and breathtaking views!</p>
-                            <a class="btn btn-primary disabled" aria-disabled="true">Buy</a>
+                            <p class="card-text" data-lang
+                               data-en="Visit the Alhambra and explore the Nasrid Palaces, the stunning Generalife gardens, and the mighty Alcazaba. Step into a world of history, beauty, and breathtaking views!"
+                               data-es="Visita la Alhambra y explora los Palacios Nazaríes, los impresionantes jardines del Generalife y la imponente Alcazaba. Adéntrate en un mundo de historia, belleza y vistas impresionantes."
+                               data-fr="Visitez l'Alhambra et explorez les Palais Nasrides, les magnifiques jardins du Generalife et l'imposante Alcazaba. Plongez dans un monde d'histoire, de beauté et de vues à couper le souffle !"
+                               data-it="Visita l'Alhambra ed esplora i Palazzi Nasridi, i meravigliosi giardini del Generalife e la possente Alcazaba. Immergiti in un mondo di storia, bellezza e panorami mozzafiato!"
+                               data-ja="アルハンブラを訪れ、ナスル朝宮殿、見事なヘネラリフェ庭園、そして壮大なアルカサバを探検しましょう。歴史、美しさ、そして息をのむような景色の世界へ足を踏み入れてください。">
+                                Visit the Alhambra and explore the Nasrid Palaces, the stunning Generalife gardens, and the mighty Alcazaba. Step into a world of history, beauty, and breathtaking views!
+                            </p>
+                            <a class="btn btn-primary disabled" aria-disabled="true" data-lang
+                               data-en="Buy"
+                               data-es="Comprar"
+                               data-fr="Acheter"
+                               data-it="Acquista"
+                               data-ja="購入">
+                                Buy
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -61,33 +90,461 @@
         </section>
     </div>
 
+
     <!-- Sección Tours -->
-    <section id="tours" class="container text-center bg-light my-5">
-        <h2>Our Tours</h2>
-        <p>Explore our handpicked destinations and enjoy a seamless travel experience.</p>
-    </section>
+<!-- Sección Tours -->
+<section id="tours" class="container text-center bg-light my-5">
+    <h2 data-lang
+        data-en="Our Tours"
+        data-es="Nuestros Tours"
+        data-fr="Nos Circuits"
+        data-it="I Nostri Tour"
+        data-ja="私たちのツアー">
+        Our Tours
+    </h2>
+
+    <p data-lang
+        data-en="Explore our handpicked destinations and enjoy a seamless travel experience."
+        data-es="Explora nuestros destinos cuidadosamente seleccionados y disfruta de una experiencia de viaje sin complicaciones."
+        data-fr="Explorez nos destinations soigneusement sélectionnées et profitez d'une expérience de voyage sans encombre."
+        data-it="Esplora le nostre destinazioni selezionate con cura e goditi un'esperienza di viaggio senza problemi."
+        data-ja="厳選された目的地を探索し、スムーズな旅行体験をお楽しみください。">
+        Explore our handpicked destinations and enjoy a seamless travel experience.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card text-center">
+                <img src="img/img1.png" class="card-img-top" alt="Alhambra">
+                <div class="card-body">
+                    <p class="card-text" data-lang
+                        data-en="Visit the Alhambra and explore the Nasrid Palaces, the stunning Generalife gardens, and the mighty Alcazaba. Step into a world of history, beauty, and breathtaking views!"
+                        data-es="Visita la Alhambra y explora los Palacios Nazaríes, los impresionantes jardines del Generalife y la imponente Alcazaba. Sumérgete en un mundo de historia, belleza y vistas espectaculares."
+                        data-fr="Visitez l'Alhambra et explorez les Palais Nasrides, les magnifiques jardins du Generalife et la puissante Alcazaba. Plongez dans un monde d'histoire, de beauté et de vues à couper le souffle !"
+                        data-it="Visita l'Alhambra ed esplora i Palazzi Nasridi, i meravigliosi giardini del Generalife e la possente Alcazaba. Immergiti in un mondo di storia, bellezza e panorami mozzafiato!"
+                        data-ja="アルハンブラ宮殿を訪れ、ナスル朝の宮殿、壮麗なヘネラリフェ庭園、そして雄大なアルカサバを探索しましょう。歴史、美しさ、そして息をのむような景色の世界へ足を踏み入れましょう！">
+                        Visit the Alhambra and explore the Nasrid Palaces, the stunning Generalife gardens, and the mighty Alcazaba.
+                    </p>
+                    <a class="btn btn-primary disabled" aria-disabled="true" data-lang
+                        data-en="Buy"
+                        data-es="Comprar"
+                        data-fr="Acheter"
+                        data-it="Acquista"
+                        data-ja="購入">
+                        Buy
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card text-center">
+                <img src="img/img1.png" class="card-img-top" alt="Alhambra">
+                <div class="card-body">
+                    <p class="card-text" data-lang
+                        data-en="Visit the Alhambra and explore the Nasrid Palaces, the stunning Generalife gardens, and the mighty Alcazaba. Step into a world of history, beauty, and breathtaking views!"
+                        data-es="Visita la Alhambra y explora los Palacios Nazaríes, los impresionantes jardines del Generalife y la imponente Alcazaba. Sumérgete en un mundo de historia, belleza y vistas espectaculares."
+                        data-fr="Visitez l'Alhambra et explorez les Palais Nasrides, les magnifiques jardins du Generalife et la puissante Alcazaba. Plongez dans un monde d'histoire, de beauté et de vues à couper le souffle !"
+                        data-it="Visita l'Alhambra ed esplora i Palazzi Nasridi, i meravigliosi giardini del Generalife e la possente Alcazaba. Immergiti in un mondo di storia, bellezza e panorami mozzafiato!"
+                        data-ja="アルハンブラ宮殿を訪れ、ナスル朝の宮殿、壮麗なヘネラリフェ庭園、そして雄大なアルカサバを探索しましょう。歴史、美しさ、そして息をのむような景色の世界へ足を踏み入れましょう！">
+                        Visit the Alhambra and explore the Nasrid Palaces, the stunning Generalife gardens, and the mighty Alcazaba.
+                    </p>
+                    <a class="btn btn-primary disabled" aria-disabled="true" data-lang
+                        data-en="Buy"
+                        data-es="Comprar"
+                        data-fr="Acheter"
+                        data-it="Acquista"
+                        data-ja="購入">
+                        Buy
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card text-center">
+                <img src="img/img1.png" class="card-img-top" alt="Alhambra">
+                <div class="card-body">
+                    <p class="card-text" data-lang
+                        data-en="Visit the Alhambra and explore the Nasrid Palaces, the stunning Generalife gardens, and the mighty Alcazaba. Step into a world of history, beauty, and breathtaking views!"
+                        data-es="Visita la Alhambra y explora los Palacios Nazaríes, los impresionantes jardines del Generalife y la imponente Alcazaba. Sumérgete en un mundo de historia, belleza y vistas espectaculares."
+                        data-fr="Visitez l'Alhambra et explorez les Palais Nasrides, les magnifiques jardins du Generalife et la puissante Alcazaba. Plongez dans un monde d'histoire, de beauté et de vues à couper le souffle !"
+                        data-it="Visita l'Alhambra ed esplora i Palazzi Nasridi, i meravigliosi giardini del Generalife e la possente Alcazaba. Immergiti in un mondo di storia, bellezza e panorami mozzafiato!"
+                        data-ja="アルハンブラ宮殿を訪れ、ナスル朝の宮殿、壮麗なヘネラリフェ庭園、そして雄大なアルカサバを探索しましょう。歴史、美しさ、そして息をのむような景色の世界へ足を踏み入れましょう！">
+                        Visit the Alhambra and explore the Nasrid Palaces, the stunning Generalife gardens, and the mighty Alcazaba.
+                    </p>
+                    <a class="btn btn-primary disabled" aria-disabled="true" data-lang
+                        data-en="Buy"
+                        data-es="Comprar"
+                        data-fr="Acheter"
+                        data-it="Acquista"
+                        data-ja="購入">
+                        Buy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- Sección About Us -->
-    <section id="about" class="container text-center my-5">
-        <h2>About Us</h2>
-        <p>We are passionate about making your travel dreams a reality.</p>
+    <section id="about" class="container my-5">
+        <h2 class="text-center" data-lang
+            data-en="About Us"
+            data-es="Sobre Nosotros"
+            data-fr="À Propos"
+            data-it="Chi Siamo"
+            data-ja="私たちについて">
+            About Us
+        </h2>
+
+        <p class="text-center" data-lang
+            data-en="At TempusGo Tours, we believe that travel is more than just sightseeing—it's about experiencing the essence of each destination. Since our founding, we've been dedicated to creating immersive, high-quality tours that connect travelers with history, culture, and tradition."
+            data-es="En TempusGo Tours, creemos que viajar es más que solo hacer turismo: se trata de experimentar la esencia de cada destino. Desde nuestra fundación, nos hemos dedicado a crear recorridos inmersivos y de alta calidad que conectan a los viajeros con la historia, la cultura y la tradición."
+            data-fr="Chez TempusGo Tours, nous pensons que voyager ne se résume pas à voir des sites touristiques, mais à vivre l'essence de chaque destination. Depuis notre création, nous nous engageons à offrir des expériences immersives et de haute qualité qui connectent les voyageurs à l'histoire, à la culture et aux traditions."
+            data-it="Noi di TempusGo Tours crediamo che viaggiare non sia solo visitare attrazioni turistiche, ma vivere l'essenza di ogni destinazione. Fin dalla nostra fondazione, ci siamo dedicati a creare tour immersivi e di alta qualità che connettono i viaggiatori alla storia, alla cultura e alla tradizione."
+            data-ja="TempusGo Toursでは、旅行は単なる観光ではなく、それぞれの目的地の本質を体験することだと考えています。創業以来、私たちは旅行者を歴史、文化、伝統とつなぐ、没入型の高品質なツアーを提供することに専念しています。">
+            At TempusGo Tours, we believe that travel is more than just sightseeing—it's about experiencing the essence of each destination...
+        </p>
+
+        <div class="row">
+            <!-- Expert Local Knowledge -->
+            <div class="col-md-6">
+                <h4 data-lang
+                    data-en="Expert Local Knowledge"
+                    data-es="Conocimiento Experto Local"
+                    data-fr="Connaissance Locale Experte"
+                    data-it="Esperienza Locale Esperta"
+                    data-ja="地元の専門知識">
+                    Expert Local Knowledge
+                </h4>
+                <p data-lang
+                    data-en="Our guides are passionate locals who bring every location to life with fascinating stories, hidden gems, and insider knowledge. Their expertise ensures that you don’t just visit a place—you truly understand it."
+                    data-es="Nuestros guías son locales apasionados que dan vida a cada lugar con historias fascinantes, rincones ocultos y conocimientos exclusivos. Su experiencia garantiza que no solo visites un lugar, sino que realmente lo comprendas."
+                    data-fr="Nos guides sont des locaux passionnés qui donnent vie à chaque lieu avec des histoires fascinantes, des trésors cachés et des connaissances exclusives. Leur expertise vous garantit de ne pas seulement visiter un endroit, mais de vraiment le comprendre."
+                    data-it="Le nostre guide sono locali appassionati che danno vita a ogni luogo con storie affascinanti, angoli nascosti e conoscenze esclusive. La loro esperienza assicura che tu non solo visiti un posto, ma che lo comprenda veramente."
+                    data-ja="私たちのガイドは、魅力的な物語、隠れた名所、内部情報を提供する情熱的な地元の人々です。彼らの専門知識は、単に訪れるだけでなく、本当に理解できるようにします。">
+                    Our guides are passionate locals who bring every location to life with fascinating stories...
+                </p>
+            </div>
+
+            <!-- Personalized Experiences -->
+            <div class="col-md-6">
+                <h4 data-lang
+                    data-en="Personalized Experiences"
+                    data-es="Experiencias Personalizadas"
+                    data-fr="Expériences Personnalisées"
+                    data-it="Esperienze Personalizzate"
+                    data-ja="パーソナライズされた体験">
+                    Personalized Experiences
+                </h4>
+                <p data-lang
+                    data-en="Every traveler is unique, and so are our tours. Whether you love history, adventure, or food, we craft customized itineraries tailored to your preferences, making every journey unforgettable."
+                    data-es="Cada viajero es único, y nuestros recorridos también lo son. Ya sea que te apasione la historia, la aventura o la gastronomía, diseñamos itinerarios personalizados para adaptarnos a tus preferencias, haciendo cada viaje inolvidable."
+                    data-fr="Chaque voyageur est unique, et nos circuits aussi. Que vous aimiez l'histoire, l'aventure ou la gastronomie, nous élaborons des itinéraires sur mesure pour répondre à vos préférences et rendre chaque voyage inoubliable."
+                    data-it="Ogni viaggiatore è unico, e lo sono anche i nostri tour. Che tu ami la storia, l'avventura o il cibo, creiamo itinerari personalizzati per adattarci alle tue preferenze, rendendo ogni viaggio indimenticabile."
+                    data-ja="すべての旅行者はユニークであり、私たちのツアーも同様です。歴史、冒険、食べ物のどれが好きであっても、私たちはあなたの好みに合わせたカスタマイズされた旅程を作成し、すべての旅を忘れられないものにします。">
+                    Every traveler is unique, and so are our tours...
+                </p>
+            </div>
+
+            <!-- Small Group Focus -->
+            <div class="col-md-6">
+                <h4 data-lang
+                    data-en="Small Group Focus"
+                    data-es="Enfoque en Pequeños Grupos"
+                    data-fr="Focus sur les Petits Groupes"
+                    data-it="Focus su Piccoli Gruppi"
+                    data-ja="小グループへのこだわり">
+                    Small Group Focus
+                </h4>
+                <p data-lang
+                    data-en="We keep our tour groups small to ensure a more personal and flexible experience..."
+                    data-es="Mantenemos nuestros grupos de viaje pequeños para garantizar una experiencia más personalizada y flexible..."
+                    data-fr="Nous gardons nos groupes de voyage petits pour garantir une expérience plus personnelle et flexible..."
+                    data-it="Manteniamo i nostri gruppi di viaggio piccoli per garantire un'esperienza più personale e flessibile..."
+                    data-ja="より個人的で柔軟な体験を保証するために、私たちはツアーグループを小規模に保ちます...">
+                    We keep our tour groups small to ensure a more personal and flexible experience...
+                </p>
+            </div>
+
+            <!-- Sustainable Travel -->
+            <div class="col-md-6">
+                <h4 data-lang
+                    data-en="Sustainable Travel"
+                    data-es="Viajes Sostenibles"
+                    data-fr="Voyage Durable"
+                    data-it="Viaggi Sostenibili"
+                    data-ja="持続可能な旅行">
+                    Sustainable Travel
+                </h4>
+                <p data-lang
+                    data-en="Responsible tourism is at the heart of what we do. We prioritize eco-friendly practices..."
+                    data-es="El turismo responsable está en el corazón de lo que hacemos. Priorizamos prácticas ecológicas..."
+                    data-fr="Le tourisme responsable est au cœur de ce que nous faisons. Nous privilégions des pratiques écologiques..."
+                    data-it="Il turismo responsabile è al centro di ciò che facciamo. Diamo priorità a pratiche ecologiche..."
+                    data-ja="責任ある観光は私たちの核となるものです。私たちは環境に優しい慣行を優先します...">
+                    Responsible tourism is at the heart of what we do...
+                </p>
+            </div>
+        </div>
     </section>
 
-    <!-- Sección Contact -->
-    <section id="contact" class="container text-center bg-light my-5">
-        <h2>Contact Us</h2>
-        <p>Have questions? Reach out to us anytime.</p>
+
+<!-- Sección Contact -->
+<section id="contact" class="container text-center bg-light my-5">
+    <h2 data-lang
+        data-en="Contact Us"
+        data-es="Contáctanos"
+        data-fr="Contactez-nous"
+        data-it="Contattaci"
+        data-ja="お問い合わせ">Contact Us</h2>
+
+    <p data-lang
+        data-en="Have questions? Reach out to us anytime."
+        data-es="¿Tienes preguntas? Contáctanos en cualquier momento."
+        data-fr="Des questions ? Contactez-nous à tout moment."
+        data-it="Hai domande? Contattaci in qualsiasi momento."
+        data-ja="ご質問がありますか？いつでもお問い合わせください。">
+        Have questions? Reach out to us anytime.
+    </p>
+
+    <!-- Formulario de contacto -->
+        <form id="contactForm" action="https://formspree.io/f/xrbpzzqp" method="POST">
+        <!-- Campo de Email -->
+        <div class="mb-3">
+            <label for="email" class="form-label" data-lang
+                data-en="Your Email"
+                data-es="Tu correo electrónico"
+                data-fr="Votre e-mail"
+                data-it="La tua email"
+                data-ja="あなたのメール">Your Email</label>
+            <input type="email" class="form-control" id="email" name="email" required
+                   placeholder="example@email.com">
+            <div class="invalid-feedback" data-lang
+                data-en="Please enter a valid email address."
+                data-es="Por favor, introduce un correo válido."
+                data-fr="Veuillez entrer une adresse e-mail valide."
+                data-it="Inserisci un indirizzo email valido."
+                data-ja="有効なメールアドレスを入力してください。">
+                Please enter a valid email address.
+            </div>
+        </div>
+
+        <!-- Campo de Mensaje -->
+        <div class="mb-3">
+            <label for="message" class="form-label" data-lang
+                data-en="Your Message"
+                data-es="Tu mensaje"
+                data-fr="Votre message"
+                data-it="Il tuo messaggio"
+                data-ja="あなたのメッセージ">Your Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            <div class="invalid-feedback" data-lang
+                data-en="Please enter your message."
+                data-es="Por favor, introduce tu mensaje."
+                data-fr="Veuillez entrer votre message."
+                data-it="Inserisci il tuo messaggio."
+                data-ja="メッセージを入力してください。">
+                Please enter your message.
+            </div>
+        </div>
+
+        <!-- Botón de Enviar -->
+        <button type="submit" class="btn btn-primary w-100" data-lang
+            data-en="Send Message"
+            data-es="Enviar mensaje"
+            data-fr="Envoyer le message"
+            data-it="Invia il messaggio"
+            data-ja="メッセージを送信">Send Message</button>
+
+        <!-- Mensaje de éxito -->
+        <div id="successMessage" class="alert alert-success mt-3" style="display: none;" data-lang
+            data-en="Your message has been sent successfully!"
+            data-es="¡Tu mensaje ha sido enviado con éxito!"
+            data-fr="Votre message a été envoyé avec succès !"
+            data-it="Il tuo messaggio è stato inviato con successo!"
+            data-ja="メッセージが正常に送信されました！">
+            Your message has been sent successfully!
+        </div>
+    </form>
+</section>
+
+
+    <!-- Sección Terms & Conditions -->
+    <section id="terms" class="container my-5" style="display: none;">
+        <h2 data-lang
+            data-en="Terms & Conditions"
+            data-es="Términos y Condiciones"
+            data-fr="Termes et Conditions"
+            data-it="Termini e Condizioni"
+            data-ja="利用規約">Terms & Conditions</h2>
+
+        <p data-lang
+            data-en="By accessing and using TempusGo Tours, you agree to the following terms and conditions. All bookings are subject to availability and confirmation. Cancellations made within 24 hours of departure are non-refundable. The company reserves the right to modify itineraries due to weather, unforeseen events, or safety concerns. Prices are subject to change without prior notice. By using our services, you acknowledge and accept these terms."
+            data-es="Al acceder y utilizar TempusGo Tours, aceptas los siguientes términos y condiciones. Todas las reservas están sujetas a disponibilidad y confirmación. Las cancelaciones realizadas dentro de las 24 horas previas a la salida no son reembolsables. La empresa se reserva el derecho de modificar itinerarios debido al clima, eventos imprevistos o preocupaciones de seguridad. Los precios están sujetos a cambios sin previo aviso. Al utilizar nuestros servicios, reconoces y aceptas estos términos."
+            data-fr="En accédant et en utilisant TempusGo Tours, vous acceptez les termes et conditions suivants. Toutes les réservations sont soumises à disponibilité et confirmation. Les annulations effectuées dans les 24 heures précédant le départ ne sont pas remboursables. L'entreprise se réserve le droit de modifier les itinéraires en raison des conditions météorologiques, d'événements imprévus ou de préoccupations de sécurité. Les prix sont sujets à changement sans préavis. En utilisant nos services, vous reconnaissez et acceptez ces termes."
+            data-it="Accedendo e utilizzando TempusGo Tours, accetti i seguenti termini e condizioni. Tutte le prenotazioni sono soggette a disponibilità e conferma. Le cancellazioni effettuate entro 24 ore dalla partenza non sono rimborsabili. L'azienda si riserva il diritto di modificare gli itinerari a causa del maltempo, eventi imprevisti o preoccupazioni per la sicurezza. I prezzi possono variare senza preavviso. Utilizzando i nostri servizi, riconosci e accetti questi termini."
+            data-ja="TempusGo Tours にアクセスして使用することにより、以下の利用規約に同意したものとみなされます。すべての予約は、空き状況および確認に基づきます。出発の 24 時間以内のキャンセルは返金不可です。会社は、天候、予期しない出来事、安全上の懸念により旅程を変更する権利を留保します。価格は事前の通知なしに変更される場合があります。弊社のサービスを利用することで、これらの条件に同意したことになります。">
+            By accessing and using TempusGo Tours, you agree to the following terms and conditions.
+        </p>
     </section>
+
+    <!-- Sección Privacy Policy -->
+    <section id="privacy" class="container bg-light my-5" style="display: none;">
+        <h2 data-lang
+            data-en="Privacy Policy"
+            data-es="Política de Privacidad"
+            data-fr="Politique de Confidentialité"
+            data-it="Politica sulla Privacy"
+            data-ja="プライバシーポリシー">Privacy Policy</h2>
+
+        <p data-lang
+            data-en="TempusGo Tours values your privacy and is committed to protecting your personal information. We collect data such as name, email, and payment details solely for booking purposes. Your information will not be shared with third parties except as required for processing payments. We implement security measures to protect your data. If you have concerns about your privacy, please contact us at tempusgotours@gmail.com."
+            data-es="TempusGo Tours valora tu privacidad y se compromete a proteger tu información personal. Recopilamos datos como nombre, correo electrónico y detalles de pago únicamente con fines de reserva. Tu información no se compartirá con terceros, excepto cuando sea necesario para procesar pagos. Implementamos medidas de seguridad para proteger tus datos. Si tienes inquietudes sobre tu privacidad, contáctanos en tempusgotours@gmail.com."
+            data-fr="TempusGo Tours respecte votre vie privée et s'engage à protéger vos informations personnelles. Nous collectons des données telles que le nom, l'email et les détails de paiement uniquement à des fins de réservation. Vos informations ne seront pas partagées avec des tiers, sauf si nécessaire pour le traitement des paiements. Nous mettons en place des mesures de sécurité pour protéger vos données. Si vous avez des préoccupations concernant votre vie privée, contactez-nous à tempusgotours@gmail.com."
+            data-it="TempusGo Tours rispetta la tua privacy e si impegna a proteggere le tue informazioni personali. Raccogliamo dati come nome, email e dettagli di pagamento esclusivamente per scopi di prenotazione. Le tue informazioni non verranno condivise con terze parti, salvo quando necessario per l'elaborazione dei pagamenti. Implementiamo misure di sicurezza per proteggere i tuoi dati. Se hai dubbi sulla tua privacy, contattaci a tempusgotours@gmail.com."
+            data-ja="TempusGo Tours はお客様のプライバシーを尊重し、個人情報の保護に努めています。予約目的のみに、名前、メールアドレス、支払い情報などのデータを収集します。お客様の情報は、支払い処理が必要な場合を除き、第三者と共有されることはありません。私たちはデータを保護するためのセキュリティ対策を講じています。プライバシーに関するご質問がある場合は、tempusgotours@gmail.com までお問い合わせください。">
+            TempusGo Tours values your privacy and is committed to protecting your personal information.
+        </p>
+    </section>
+
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; TempusGo Tours 2025. All rights reserved.</p>
         <p>
-            <a href="#terms" class="text-white mx-2">Terms & Conditions</a> |
-            <a href="#privacy" class="text-white mx-2">Privacy Policy</a>
+            <a href="#" class="text-white mx-2 toggle-section" data-target="terms" data-lang
+                data-en="Terms & Conditions"
+                data-es="Términos y Condiciones"
+                data-fr="Termes et Conditions"
+                data-it="Termini e Condizioni"
+                data-ja="利用規約">Terms & Conditions</a> |
+
+            <a href="#" class="text-white mx-2 toggle-section" data-target="privacy" data-lang
+                data-en="Privacy Policy"
+                data-es="Política de Privacidad"
+                data-fr="Politique de Confidentialité"
+                data-it="Politica sulla Privacy"
+                data-ja="プライバシーポリシー">Privacy Policy</a>
         </p>
     </footer>
 
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".toggle-section").forEach(link => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("data-target");
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    if (targetSection.style.display === "none") {
+                        targetSection.style.display = "block";
+                        targetSection.scrollIntoView({ behavior: "smooth" });
+                    } else {
+                        targetSection.style.display = "none";
+                    }
+                }
+            });
+        });
+    });
+    </script>
+
+    <!-- Script para manejar el formulario y validación -->
+    <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const emailInput = document.getElementById("email");
+        const messageInput = document.getElementById("message");
+        const successMessage = document.getElementById("successMessage");
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        let valid = true;
+
+        // Validación del email
+        if (!emailRegex.test(emailInput.value)) {
+            emailInput.classList.add("is-invalid");
+            valid = false;
+        } else {
+            emailInput.classList.remove("is-invalid");
+        }
+
+        // Validación del mensaje
+        if (messageInput.value.trim() === "") {
+            messageInput.classList.add("is-invalid");
+            valid = false;
+        } else {
+            messageInput.classList.remove("is-invalid");
+        }
+
+        if (!valid) return;
+
+        // Simulación de envío de formulario (aquí se debería integrar un backend)
+        fetch("https://formspree.io/f/xrbpzzqp", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                email: emailInput.value,
+                message: messageInput.value
+            })
+        }).then(response => {
+            if (response.ok) {
+                successMessage.style.display = "block";
+                emailInput.value = "";
+                messageInput.value = "";
+            }
+        }).catch(error => console.error("Error sending message:", error));
+    });
+    </script>
+
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const userLang = navigator.language || navigator.userLanguage;
+        let lang = "en"; // Idioma por defecto
+
+        if (userLang.startsWith("es")) lang = "es";
+        else if (userLang.startsWith("fr")) lang = "fr";
+        else if (userLang.startsWith("it")) lang = "it";
+        else if (userLang.startsWith("ja")) lang = "ja";
+
+        setLanguage(lang);
+    });
+
+    function setLanguage(lang) {
+        const elements = document.querySelectorAll("[data-lang]");
+        elements.forEach(el => {
+            if (el.dataset[lang]) {
+                el.innerHTML = el.dataset[lang]; // Cambia el texto según el idioma
+            }
+        });
+
+        // Actualizar el texto del dropdown con el idioma actual
+        const languageDropdown = document.getElementById("languageDropdown");
+        const languageNames = { en: "English", es: "Español", fr: "Français", it: "Italiano", ja: "日本語" };
+        languageDropdown.innerHTML = `Language (${languageNames[lang]})`;
+
+        // Guardar en localStorage para que se mantenga tras refrescar la página
+        localStorage.setItem("selectedLanguage", lang);
+    }
+
+    function switchLanguage(lang) {
+        setLanguage(lang);
+    }
+
+    // Mantener el idioma seleccionado en recargas de página
+    document.addEventListener("DOMContentLoaded", function () {
+        const savedLang = localStorage.getItem("selectedLanguage") || "en";
+        setLanguage(savedLang);
+    });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
